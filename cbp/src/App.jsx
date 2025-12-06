@@ -2,7 +2,9 @@ import Navbar from './components/navbar.jsx'
 import Body from './components/body.jsx'
 import About from "./components/about";
 import Contact from "./components/contact";
-import Form from "./components/form";
+import FormBuilder from "./components/formBuilder";
+import FormSubmit from "./components/formSubmit";
+import FormResponses from "./components/formResponses";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -27,7 +29,10 @@ function App() {
           <Route path="/" element={<Body />} />     {/* Home Page */}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/form" element={<Form/>} />
+          <Route path="/form/create" element={<FormBuilder />} />
+          <Route path="/form/edit/:id" element={<FormBuilder />} />
+          <Route path="/form/submit/:formId" element={<FormSubmit />} />
+          <Route path="/form/responses/:formId" element={<FormResponses />} />
         </Routes>
       </main>
     </div>
