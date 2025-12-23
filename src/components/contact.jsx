@@ -68,7 +68,7 @@ export default function Contact() {
                                 <button type="submit" className="inline-flex items-center rounded-full bg-cyan-400 px-6 py-2 text-sm font-semibold text-black shadow-sm hover:opacity-90">Send Message</button>
 
                                 <div className="text-sm text-gray-400">
-                                    Or reach us at <a href="mailto:hello@example.com" className="text-cyan-300 underline">akashlovesabhishek@example.com</a>
+                                    Or reach us at <a href="mailto:hello@example.com" className="text-cyan-300 underline">aayushlovesabhishek@example.com</a>
                                 </div>
                             </div>
                         </form>
